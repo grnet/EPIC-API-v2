@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright ©2011-2012 Pieter van Beek <pieterb@sara.nl>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -152,6 +153,10 @@ class DB
     self.pool["INSERT INTO `pidsequence` (`processID`) VALUES (NULL)"].insert
   end
 
+  # @return [Fixnum]
+  def grnetpidsequence
+    self.pool["INSERT INTO `pidsequence` (`processID`) VALUES (NULL)"].insert
+  end
 
 end
 
