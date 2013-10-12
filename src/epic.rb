@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright ©2011-2012 Pieter van Beek <pieterb@sara.nl>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,6 +32,7 @@ require 'singleton'
 # @todo Documentation
 module EPIC
 
+  DEFAULT_GENERATOR = "grnetpid"
   # Make an Instance of the logger available through all modules.
   # @todo I'm not sure if this is the best way to do it. See {Rack::Request.logger}.
   LOGGER = Logging.instance()
